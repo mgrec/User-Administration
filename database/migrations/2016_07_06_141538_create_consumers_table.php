@@ -16,7 +16,7 @@ class CreateConsumersTable extends Migration
             $table->increments('id');
             $table->string('mail')->unique();
             $table->string('name');
-            $table->text('content');
+            $table->text('describe');
             $table->timestamps();
         });
     }
