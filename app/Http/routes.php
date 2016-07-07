@@ -20,3 +20,5 @@ Route::get('user/list', 'ConsumerController@listing');
 Route::get('user/contact', 'ConsumerController@contact');
 
 Route::post('user/create', 'ConsumerController@store');
+
+Route::delete('user/list/delete/{id}', 'ConsumerController@delete');
