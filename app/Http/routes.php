@@ -14,3 +14,9 @@
 Route::get('/', function () {
     return view('welcome');
 });
+Route::get('user/', 'ConsumerController@home');
+Route::get('user/create', 'ConsumerController@create');
+Route::get('user/list', 'ConsumerController@listing');
+Route::get('user/contact', 'ConsumerController@contact');
+
+Route::post('user/create', 'ConsumerController@store');
